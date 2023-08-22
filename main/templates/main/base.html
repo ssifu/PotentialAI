@@ -1,0 +1,743 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PotentialAI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}" />
+  </head>
+  <body>
+    <!-- Navigation Bar Section -->
+
+    <header class="site-header">
+      <div class="wrapper site-header__wrapper">
+        <div class="site-header__start">
+          <a href="#" class="brand">
+            <img src="{%static 'main/images/title.png' %}" alt="Logo" />
+          </a>
+        </div>
+        <div class="site-header__middle">
+          <nav class="nav">
+            <button
+              class="nav__toggle"
+              aria-expanded="false"
+              type="button"
+              aria-label="menu">
+              <i class="fa-solid fa-bars fa-3x"></i>
+            </button>
+            <ul class="nav__wrapper">
+              <li class="nav__item nav__active"><a href="#">Home</a></li>
+              <li class="nav__item">
+                <a id="nav-services" href="#"
+                  >Our Services <i class="fa-solid fa-chevron-down"></i
+                ></a>
+                <ul id="services-dropdown" class="header-dropdown__list">
+                  <li class="header-dropdown__item active">
+                    <a href="#">Graphic Design</a>
+                  </li>
+                  <li class="header-dropdown__item"><a href="#">App</a></li>
+                  <li class="header-dropdown__item"><a href="#">Web</a></li>
+                </ul>
+              </li>
+              <li class="nav__item"><a href="#">Portfolio</a></li>
+              <li class="nav__item"><a href="#">Team</a></li>
+              <li class="nav__item"><a href="#">Blog</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="site-header__end">
+          <a class="primary-button" href="#">Contact Us</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="heading-wrapper homepage-hero">
+        <p class="hero-heading top">The <span>fastest Company</span><br /></p>
+        <p class="hero-heading bottom">making <span>Sofware in Korea</span></p>
+        <p class="hero-paragraph">
+          Potential is a lean startup developer with the fastest development
+          <br />speed in Korea
+        </p>
+      </div>
+      <!-- <button type="button" class="primary-button">
+          Schedule a Call For Us
+        </button> -->
+      <!-- Calendly link widget begin -->
+      <!-- Calendly link widget begin -->
+      <link
+        href="https://assets.calendly.com/assets/external/widget.css"
+        rel="stylesheet" />
+      <script
+        src="https://assets.calendly.com/assets/external/widget.js"
+        type="text/javascript"
+        async></script>
+      <a
+        class="primary-button schedule"
+        href=""
+        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/samiulsifat/30min'});return false;"
+        >Schedule for a call</a
+      >
+      <!-- Calendly link widget end -->
+      <!-- Calendly link widget end -->
+    </section>
+
+    <!-- Hero Image Section -->
+    <div class="hero-image-section">
+      <div class="hero-image">
+        <img
+          src="{%static 'main/images/financial_app.png' %}"
+          alt="Financial App" />
+        <p class="hero-image__caption">Financial App</p>
+      </div>
+      <div class="hero-image">
+        <img
+          src="{%static 'main/images/web_application.png' %}"
+          alt="Web Application" />
+        <p class="hero-image__caption">Web Application</p>
+      </div>
+      <div class="hero-image">
+        <img
+          src="{%static 'main/images/website_design.png' %}"
+          alt="Website Design" />
+        <p class="hero-image__caption">Website Design</p>
+      </div>
+      <div class="hero-image">
+        <img src="{%static 'main/images/food_app.png' %}" alt="Food App" />
+        <p class="hero-image__caption">Food App</p>
+      </div>
+    </div>
+
+    <!-- How To Section -->
+
+    <div class="how-to-section">
+      <div class="howTo-details">
+        <p class="howTo-details__title">
+          How We Can Make
+          <span
+            >App/Web<br />
+            Faster</span
+          >
+          Than Other Company
+        </p>
+        <p class="howTo-details__description">
+          Scale your software operations through a custom engineering team. Meet
+          the demand of your company's operations with a high-performing
+          nearshore team skilled in the technologies you need.
+        </p>
+        <button class="secondary-button">
+          See how it works
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="howTo-cards">
+        <div class="howTo-cards__details">
+          <i class="fa-solid fa-check"></i>
+          <h4 class="howTo-cards__title">Experienced Team</h4>
+          <p class="howTo-cards__description">
+            We have experienced team for AI specialists, designers, and web
+            experts who have worked on numerous projects.
+          </p>
+        </div>
+        <div class="howTo-cards__details">
+          <i class="fa-solid fa-check"></i>
+          <h4 class="howTo-cards__title">Streamlined Processes</h4>
+          <p class="howTo-cards__description">
+            We optimized and streamlined development processes that ensure
+            efficient project management, reducing unnecessary delays & ensuring
+            timely deliveries.
+          </p>
+        </div>
+        <div class="howTo-cards__details">
+          <i class="fa-solid fa-check"></i>
+          <h4 class="howTo-cards__title">Collaborative Approach</h4>
+          <p class="howTo-cards__description">
+            This collaborative approach ensures that the final product aligns
+            with the client's vision, reducing the need for extensive revisions.
+          </p>
+        </div>
+        <div class="howTo-cards__details">
+          <i class="fa-solid fa-check"></i>
+          <h4 class="howTo-cards__title">Automation & AI Integration</h4>
+          <p class="howTo-cards__description">
+            Our agency leverages automation tools and integrates AI where
+            possible to speed up repetitive tasks, data processing, and testing.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparison Section -->
+    <div class="comparison-section">
+      <div class="comparison-section__title">
+        <p>
+          Comparison between Typical
+          <span>Korean Software<br />Companies and Potential</span>
+        </p>
+        <p>
+          Unveiling the Advantages and Considerations for Your Software<br />
+          Development Journey
+        </p>
+      </div>
+      <div class="comparison-table">
+        <div class="table-row">Potential</div>
+        <div class="table-row">Typical Korean Software Company</div>
+        <div class="table-row">
+          <div class="table-points">
+            <i class="fa-solid fa-check"></i>
+            <p>Shorter development cycles</p>
+          </div>
+          <div class="table-points">
+            <i class="fa-solid fa-check"></i>
+            <p>Agile and efficient processs</p>
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-points">
+            <i class="fa-solid fa-check"></i>
+            <p>Longer development timelines</p>
+          </div>
+          <div class="table-points">
+            <i class="fa-solid fa-check"></i>
+            <p>Traditional development methods</p>
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-points">
+            <i class="fa-solid fa-check"></i>
+            <p>Competitive and transparent</p>
+          </div>
+          <div class="table-points">
+            <i class="fa-solid fa-check"></i>
+            <p>No hidden fees</p>
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-points">
+            <i class="fa-solid fa-check"></i>
+            <p>Variable pricing structures</p>
+          </div>
+          <div class="table-points">
+            <i class="fa-solid fa-check"></i>
+            <p>Potential for hidden costs</p>
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-points">
+            <i class="fa-solid fa-check"></i>
+            <p>Highly skilled professionals</p>
+          </div>
+          <div class="table-points">
+            <i class="fa-solid fa-check"></i>
+            <p>Collaborative and diverse</p>
+          </div>
+        </div>
+        <div class="table-row">
+          <div class="table-points">
+            <i class="fa-solid fa-check"></i>
+            <p>Limited talent pool</p>
+          </div>
+          <div class="table-points">
+            <i class="fa-solid fa-check"></i>
+            <p>Standard team composition</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Qualities Section -->
+
+    <div class="our-qualities">
+      <div class="quality">
+        <p>
+          <span>Time Taken:</span> At Potential, we prioritize agile and
+          efficient development, ensuring quicker time-to-market for your
+          projects compared to traditional Korean software companies.
+        </p>
+      </div>
+
+      <div class="quality">
+        <p>
+          <span>Cost:</span> With competitive and transparent pricing, Potential
+          offers cost-effective solutions, sparing you from unexpected expenses
+          that might arise with other providers.
+        </p>
+      </div>
+      <div class="quality">
+        <p>
+          <span>Team:</span> Our team comprises highly skilled professionals
+          from diverse backgrounds, bringing a wealth of expertise and
+          innovative ideas to your projects, which may not be as readily
+          available in a typical Korean software company.
+        </p>
+      </div>
+    </div>
+
+    <!-- Our Services Section -->
+
+    <div class="our-services-section">
+      <div class="services-section__title">
+        <p>
+          Services
+          <span>We Provide</span>
+        </p>
+        <p>
+          Potential is a software based company in Korea, Our main <br />
+          services are AI, APPS & WEB
+        </p>
+      </div>
+      <div class="services">
+        <div class="service">
+          <div class="service-img">
+            <img src="{%static 'main/images/icons/ai.png' %}" alt="" />
+          </div>
+          <h2 class="service-title">AI</h2>
+          <div class="service-description">
+            <p class="service-points">
+              <i class="fa-solid fa-check"></i>Create Your Own ChatGpt for your
+              business
+            </p>
+            <p class="service-points">
+              <i class="fa-solid fa-check"></i>AI based Human body Analysis
+            </p>
+            <p class="service-points">
+              <i class="fa-solid fa-check"></i>Data Labeling
+            </p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-img">
+            <img src="{%static 'main/images/icons/ui-design.png' %}" alt="" />
+          </div>
+          <h2 class="service-title">Apps</h2>
+          <div class="service-description">
+            <p class="service-points">
+              <i class="fa-solid fa-check"></i>Platform
+            </p>
+            <p class="service-points">
+              <i class="fa-solid fa-check"></i>CCTV Monitoring System
+            </p>
+            <p class="service-points">
+              <i class="fa-solid fa-check"></i>Computer Vision, AI
+            </p>
+          </div>
+        </div>
+        <div class="service">
+          <div class="service-img">
+            <img src="{%static 'main/images/icons/www-click.png' %}" alt="" />
+          </div>
+          <h2 class="service-title">Web</h2>
+          <div class="service-description">
+            <p class="service-points">
+              <i class="fa-solid fa-check"></i>Platform
+            </p>
+            <p class="service-points">
+              <i class="fa-solid fa-check"></i>Landing Page
+            </p>
+            <p class="service-points">
+              <i class="fa-solid fa-check"></i>Viral Marketing Page
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="portfolio-section">
+      <img src="{%static 'main/images/portfolio-boxes.png' %}" alt="" />
+      <img src="{%static 'main/images/portfolio-boxes.png' %}" alt="" />
+      <div class="portfolio-section__title">
+        <p>Our Portfolio</p>
+        <p>Showcasing Our Finest Creations and Success Stories</p>
+      </div>
+      <div class="portfolio-bottom">
+        <div class="portfolio-details">
+          <p>AR</p>
+          <h1>AR Library</h1>
+          <h2>Mobile App Design</h2>
+          <p>
+            Avalanche is an open-source platform for building decentralized for
+            AR Library - App Design.
+          </p>
+          <button class="secondary-button portfolio-btn">
+            See case studies<i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="portfolio-image">
+          <img src="{%static 'main/images/portfolio.png' %}" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Buisness Section -->
+
+    <div class="buisness-wrapper">
+      <div class="buisness-contain">
+        <div class="section-image-container">
+          <img
+            src="{%static 'main/images/meeting.png' %}"
+            loading="lazy"
+            alt="Orix Interior Design"
+            class="contain" />
+        </div>
+        <div class="section-text-container">
+          <div class="tagline-container">
+            <div class="tagline-text">
+              We Know <span>Not Only Software</span> But <span>Buisness</span>
+            </div>
+          </div>
+          <p class="buisness-paragraph">
+            In this concise yet powerful statement, we affirm our proficiency in
+            not just the technical aspects of software but also our deep
+            understanding of the business world. Our expertise goes beyond mere
+            coding and development; we grasp the intricacies of various
+            industries, market dynamics, and the ever-evolving needs of our
+            clients. With this holistic knowledge, we are uniquely positioned to
+            provide innovative and tailored solutions that drive real business
+            growth and success. Emphasizing the fusion of technical prowess and
+            business acumen, we stand ready to navigate the challenges of the
+            digital landscape and unlock the full potential of your enterprise.
+          </p>
+          <button type="button" class="secondary-button">
+            Show More <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Section -->
+
+    <section class="featured-works" id="featured-works">
+      <div class="container">
+        <div class="lines">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="447"
+            height="348"
+            viewBox="0 0 447 348"
+            fill="none">
+            <path
+              d="M1 346.932C20.4359 293.194 96.3394 174.752 196 165.932C422 145.932 439.116 16.9273 446 0.932129"
+              stroke="#FAFAFA"
+              stroke-width="2" />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="447"
+            height="348"
+            viewBox="0 0 447 348"
+            fill="none">
+            <path
+              d="M1 346.932C20.4359 293.194 96.3394 174.752 196 165.932C422 145.932 439.116 16.9273 446 0.932129"
+              stroke="#FAFAFA"
+              stroke-width="2" />
+          </svg>
+        </div>
+        <div class="team-section__title">
+          <p>Meet Our <span>Expert Team</span></p>
+          <p>
+            Introducing Our expert team member. All the people are<br />
+            very specialized in Potential.
+          </p>
+        </div>
+
+        <div class="works-container">
+          <!-- work card column-->
+
+          <!-- single card -->
+          <div class="single-work-card aos-init aos-animate" data-aos="fade-up">
+            <div class="work-card-img-holder">
+              <div class="single-card-img">
+                <!-- image set as background image -->
+                <img
+                  src="{%static 'main/images/lukas.png' %}"
+                  class="attachment-full size-full"
+                  alt=""
+                  decoding="async"
+                  loading="lazy" />
+              </div>
+            </div>
+            <p class="body-1">Mr. Lukas</p>
+            <p class="body-2">Founder of Potential</p>
+          </div>
+          <!-- end single card -->
+
+          <!-- single card -->
+          <div class="single-work-card aos-init aos-animate" data-aos="fade-up">
+            <div class="work-card-img-holder">
+              <div class="single-card-img">
+                <!-- image set as background image -->
+                <img
+                  width="1201"
+                  height="901"
+                  src="{%static 'main/images/mk.png' %}"
+                  class="attachment-full size-full"
+                  alt=""
+                  decoding="async"
+                  loading="lazy" />
+              </div>
+            </div>
+            <p class="body-1">MK</p>
+            <p class="body-2">Sales Manager</p>
+          </div>
+          <!-- end single card -->
+
+          <!-- single card -->
+          <div class="single-work-card aos-init aos-animate" data-aos="fade-up">
+            <div class="work-card-img-holder">
+              <div class="single-card-img">
+                <!-- image set as background image -->
+                <img
+                  width="1600"
+                  height="1200"
+                  src="{%static 'main/images/farhad.png' %}"
+                  class="attachment-full size-full"
+                  alt=""
+                  decoding="async"
+                  loading="lazy" />
+              </div>
+            </div>
+            <p class="body-1">Md Forhad Alam</p>
+            <p class="body-2">Sr. UI/UX Designer</p>
+          </div>
+          <!-- end single card -->
+
+          <!-- single card -->
+          <div class="single-work-card aos-init aos-animate" data-aos="fade-up">
+            <div class="work-card-img-holder">
+              <div class="single-card-img">
+                <!-- image set as background image -->
+                <img
+                  width="1201"
+                  height="900"
+                  src="{%static 'main/images/prabal.png' %}"
+                  class="attachment-full size-full"
+                  alt=""
+                  decoding="async"
+                  loading="lazy" />
+              </div>
+            </div>
+            <p class="body-1">Prabal Chattachart</p>
+            <p class="body-2">Developer</p>
+          </div>
+          <!-- end single card -->
+
+          <!-- end work column -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Review Section -->
+
+    <div class="review-section">
+      <div class="review-section__title">
+        <p>Reviews by <span>Client</span></p>
+        <p>What they say about us Potential.</p>
+      </div>
+      <div class="review">
+        <div class="review-details">
+          <h1 class="review-title">Amazing Quiety template!</h1>
+          <div class="review-stars">
+            <i class="fa-solid fa-star" style="color: #fac300"></i>
+            <i class="fa-solid fa-star" style="color: #fac300"></i>
+            <i class="fa-solid fa-star" style="color: #fac300"></i>
+            <i class="fa-solid fa-star" style="color: #fac300"></i>
+            <i class="fa-solid fa-star" style="color: #fac300"></i>
+          </div>
+          <p class="review-description">
+            Appropriately negotiate interactive niches rather orchestrate
+            scalable benefits whereas flexible systems. Objectively grow quality
+            outsourcing without vertical methods of empowerment. Assertively
+            negotiate just in time innovation after client-centered thinking.
+          </p>
+          <div class="client-and-navigation">
+            <div class="client">
+              <h2>John Doe</h2>
+              <p>CEO of Scater</p>
+            </div>
+            <div class="review-navigation">
+              <i class="fa-solid fa-arrow-left fa-2xl"></i>
+              <i class="fa-solid fa-arrow-right fa-2xl"></i>
+            </div>
+          </div>
+        </div>
+        <div class="client-feedback">
+          <button type="button" class="play-video-button">
+            <i class="fa-solid fa-play fa-lg"></i>
+          </button>
+          <img src="{%static 'main/images/Client.png' %}" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog Section -->
+
+    <section class="home-latest-blog">
+      <div class="blog-container">
+        <div class="blog-section__title">
+          <p>Our <span>Blog</span></p>
+          <p>We have more blog for you</p>
+        </div>
+        <div class="blog-items-wrapper">
+          <div class="item">
+            <div class="post-card-v2 aos-init aos-animate" data-aos="fade-up">
+              <a title="Fortify Your Website Security" class="link-holder">
+                <div class="img-wrapper">
+                  <img
+                    loading="lazy"
+                    src="{%static 'main/images/ai-ml-buisness.png' %}"
+                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                    alt=""
+                    decoding="async" />
+                </div>
+
+                <p class="blog-title">
+                  Human-Centric AI: Balancing Ethics in App
+                </p>
+                <p class="blog-description">
+                  Balancing Ethics in App Design" takes center stage, prompting
+                  a crucial dialogue on the responsible integration of
+                  artificial intelligence in app development.
+                </p>
+
+                <button type="button" class="secondary-button">
+                  Read More<i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="post-card-v2 aos-init aos-animate" data-aos="fade-up">
+              <a
+                title="Driving Brand Success: Unifying Strategy, Content, and Creative"
+                class="link-holder">
+                <div class="img-wrapper">
+                  <img
+                    src="{%static 'main/images/app-design.png' %}"
+                    class="attachment-full size-full"
+                    alt=""
+                    decoding="async"
+                    loading="lazy" />
+                </div>
+
+                <p class="blog-title">How to design App using Figma tools</p>
+                <p class="blog-description">
+                  In the realm of app design, Figma emerges as a powerful ally,
+                  revolutionizing the creative process with its intuitive and
+                  collaborative tools.
+                </p>
+                <button type="button" class="secondary-button">
+                  Read More<i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="post-card-v2 aos-init aos-animate" data-aos="fade-up">
+              <a
+                title="Driving Brand Success: Unifying Strategy, Content, and Creative"
+                class="link-holder">
+                <div class="img-wrapper">
+                  <img
+                    src="{%static 'main/images/market-trends.png' %}"
+                    class="attachment-full size-full"
+                    alt=""
+                    decoding="async"
+                    loading="lazy" />
+                </div>
+
+                <p class="blog-title">Web Design Trends 2023: A Look Ahead</p>
+                <p class="blog-description">
+                  Provides a glimpse into the captivating landscape of web
+                  design, projecting the cutting-edge trends that will shape the
+                  digital world
+                </p>
+                <button type="button" class="secondary-button">
+                  Read More<i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <div class="footer">
+      <div class="footer-navigation">
+        <div class="footer-introduction">
+          <div class="introduction">
+            <img src="{%static 'main/images/potential-footer.png' %}" alt="" />
+            <p>
+              Potential is a lean startup developer <br />
+              with the fastest development speed <br />in Korea
+            </p>
+          </div>
+          <div class="contact-info">
+            <h3>Let’s talk</h3>
+            <p>contact@potentialai.com</p>
+            <p>+82 491-81-02498</p>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Recent Projects</h3>
+          <ul class="footer-col__points">
+            <li>Project Name</li>
+            <li>Project Name</li>
+            <li>Project Name</li>
+            <li>Project Name</li>
+            <li>Project Name</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Navigation</h3>
+          <ul class="footer-col__points">
+            <li>About Potential</li>
+            <li>Services of AI</li>
+            <li>Services of App</li>
+            <li>Services of Web</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Legal</h3>
+          <ul class="footer-col__points">
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
+            <li>Cookie Policy</li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3 class="footer-col__title">Our Location</h3>
+          <ul class="footer-col__points">
+            <li>South Korea</li>
+            <li>Bangladesh</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-contact-links">
+        <div class="contact-links">
+          <a href="#">Dribble</a>
+          <a href="#">Behance</a>
+          <a href="#">Github</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+        </div>
+        <hr style="width: 100%" />
+        <p>Copyright © 2023 Potential. All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <script src="{% static 'main/js/index.js' %}"></script>
+  </body>
+</html>
